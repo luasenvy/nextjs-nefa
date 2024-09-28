@@ -1,53 +1,19 @@
-# NEFA Landing Page
+# nextjs-nefa
 
-Free landing page template built using Nuxt 2 and Tailwindcss 3
+[Nefa Theme](https://github.com/RSurya99/nefa) for [Next.js](https://nextjs.org/)<sub>(14+ App Router)</sub>
 
-> [LIVE DEMO](https://nefa.vercel.app/)
+## Tested Environment
 
-![Thumbnail](assets/img/thumbnail.jpg)
+- debian - bookworm
+- nodejs - v20.17.0
+- npm - 10.8.3
 
-## Project Structure
+## npm commands
 
-.  
-├── assets  
-│ ├── css  
-│ └── img  
-├── components  
-│ └── base  
-├── layouts  
-├── mixins  
-├── pages  
-├── plugins  
-├── static  
-├── README.md  
-├── nuxt.config.js  
-├── package.json  
-└── tailwind.config.js  
-
-## Getting Started
-
-```bash
-# clone this repository or click 'use this template' button
-$ git clone https://github.com/RSurya99/nefa.git
-
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-## Other version of NEFA
-- [React NEFA](https://github.com/hakimov-dev/nefa-react) by [Muhammadamin](https://github.com/hakimov-dev)
-
-Use it for learn, but please don’t republish, redistribute, or resell the template.
-
-Code by [rsurya99](https://github.com/rsurya99)  
-UI/UX by [irvanmoses](https://www.facebook.com/irvan.moses)
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | `rm -rf .next && next build`                       |
+| `npm run start`        | `next start`                                       |
+| `npm run lint`         | `next lint`                                        |
