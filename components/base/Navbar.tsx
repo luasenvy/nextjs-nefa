@@ -18,14 +18,14 @@ export default function Navbar() {
 
   return (
     <nav id="navbar" className="relative z-10 w-full text-neutral-800">
-      <div className="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
-        <div className="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
-          <div className="w-full flex flex-row items-center justify-between py-6">
+      <div className="mx-auto flex max-w-screen-xl flex-col px-8 py-4 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col items-center space-x-4 lg:flex-row xl:space-x-8">
+          <div className="flex w-full flex-row items-center justify-between py-6">
             <div>
               <Image src={Logo} className="w-24 xl:w-28" alt="Nefa Logo" />
             </div>
             <button
-              className="rounded-lg lg:hidden focus:outline-none focus:shadow-outline"
+              className="focus:shadow-outline rounded-lg focus:outline-none lg:hidden"
               onClick={() => setOpen((prev) => !prev)}
             >
               {open ? <CloseRounded /> : <SegmentRounded />}
@@ -33,7 +33,7 @@ export default function Navbar() {
           </div>
           <ul
             className={classnames(
-              "w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0 animation-fadeindown",
+              "animation-fadeindown flex h-auto w-full flex-grow origin-top flex-col space-y-3 pb-4 duration-300 lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:pb-0 xl:space-x-2",
               {
                 flex: open,
                 hidden: !open,
@@ -46,11 +46,11 @@ export default function Navbar() {
             <NavLink name="Watchlist" url="#" />
             <NavLink name="NFT" url="#" />
             <NavLink name="Portfolio" url="#" />
-            <li className="relative group">
+            <li className="group relative">
               <button
-                className="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
+                className="focus:shadow-outline flex items-center rounded-lg bg-transparent py-2 text-sm text-[#666666] hover:text-gray-900 focus:outline-none md:px-4"
                 onClick={() => setDropdownNavbar((prev) => !prev)}
-                onBlur={() => setDropdownNavbar((prev) => !prev)}
+                onBlur={() => setDropdownNavbar(false)}
               >
                 <span>Products</span>
                 <ChevronLeftRounded
@@ -59,24 +59,24 @@ export default function Navbar() {
                 />
               </button>
               {dropdownNavbar && (
-                <ul className="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0 animation-fadeindown">
+                <ul className="animation-fadeindown flex max-w-42 flex-col rounded-md py-1 pl-2 lg:absolute lg:bg-white lg:pl-0 lg:shadow-md">
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                       Exchange
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                       Wallet
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                       Explorer
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                       Charts
                     </a>
                   </li>
@@ -86,10 +86,10 @@ export default function Navbar() {
           </ul>
         </div>
         <div className={classnames("space-x-3", { flex: open, hidden: !open, "lg:flex": !open })}>
-          <Button className="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]">
+          <Button className="text-gradient mt-2 border border-[#0c66ee] bg-inherit px-8 py-3 xl:px-10">
             Login
           </Button>
-          <Button className="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
+          <Button className="mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] px-8 py-3 text-white xl:px-10">
             Sign Up
           </Button>
         </div>

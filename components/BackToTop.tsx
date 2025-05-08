@@ -8,12 +8,12 @@ export default function BackToTop() {
   };
 
   return (
-    <div className="w-full my-10 flex justify-center">
+    <div className="my-10 flex w-full justify-center">
       <a
         data-aos="flip-down"
         data-aos-delay="150"
         href="#navbar"
-        className="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700"
+        className="flex items-center space-x-2 rounded-md border border-[#DDDDDD] bg-[#FAFAFA] px-6 py-3 text-gray-700 hover:bg-gray-100 hover:shadow-md"
         onClick={handleClick}
       >
         <span>Back to top</span>

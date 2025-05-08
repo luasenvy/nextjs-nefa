@@ -25,10 +25,10 @@ const getImage = (img: string) => {
 
 export default function Step({ step }: StepProps) {
   return (
-    <div className="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
-      <Image src={getImage(step.img)} className="max-w-[245px] mx-auto" alt="" />
-      <h3 className="text-xl text-neutral-800 font-semibold">{step.title}</h3>
-      <p className="text-sm text-gray-700 leading-relaxed">{step.description}</p>
+    <div className="max-w-[280px] space-y-6 text-center sm:space-y-3 xl:max-w-[363px]">
+      <Image src={getImage(step.img)} className="mx-auto max-w-[245px]" alt="" />
+      <h3 className="text-xl font-semibold text-neutral-800">{step.title}</h3>
+      <p className="text-sm leading-relaxed text-gray-700">{step.description}</p>
     </div>
   );
 }

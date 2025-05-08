@@ -15,18 +15,18 @@ export default function Hero() {
   return (
     <section id="hero" className="w-full pb-24">
       <Section>
-        <div className="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
+        <div className="col-span-12 mt-12 space-y-4 px-6 text-center sm:space-y-6 sm:text-left lg:col-span-6 xl:mt-10">
           <span
             data-aos="fade-right"
             data-aos-once="true"
-            className="text-base text-gradient font-semibold uppercase"
+            className="text-gradient text-base font-semibold uppercase"
           >
             Sign Up Today
           </span>
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            className="text-[2.5rem] leading-tight font-bold capitalize sm:pr-8 sm:text-5xl xl:pr-10 xl:text-6xl"
           >
             The World's <span className="text-header-gradient">Fastest Growing</span> Crypto Web App
           </h1>
@@ -43,12 +43,12 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
-            className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+            className="mt-2 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
           >
-            <Button className="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
+            <Button className="max-w-full border border-[#0c66ee] bg-gradient-to-r from-[#468ef9] to-[#0c66ee] px-8 py-4 text-white">
               Get Started
             </Button>
-            <Button className="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center">
+            <Button className="text-gradient flex max-w-full items-center justify-center border border-[#0c66ee] bg-inherit px-6 py-4">
               <span>Download App</span>
               <ChevronLeftRounded
                 className="mt-1 text-[#0c66ee]"
@@ -57,7 +57,7 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="hidden sm:block col-span-12 lg:col-span-6">
+        <div className="col-span-12 hidden sm:block lg:col-span-6">
           <div className="w-full">
             <Image
               data-aos="fade-up"
@@ -72,28 +72,28 @@ export default function Hero() {
           data-aos="fade-up"
           data-aos-delay="300"
           src={HeroEllipse1}
-          className="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
+          className="absolute bottom-12 left-4 hidden w-6 sm:block xl:bottom-16 xl:left-0"
           alt=""
         />
         <Image
           data-aos="fade-up"
           data-aos-delay="300"
           src={HeroEllipse2}
-          className="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
+          className="absolute top-4 right-64 hidden w-6 sm:top-10 sm:right-96 sm:block xl:right-[32rem]"
           alt=""
         />
         <Image
           data-aos="fade-up"
           data-aos-delay="300"
           src={HeroEllipse3}
-          className="hidden sm:block absolute bottom-56 right-24 w-6"
+          className="absolute right-24 bottom-56 hidden w-6 sm:block"
           alt=""
         />
         <Image
           data-aos="fade-up"
           data-aos-delay="300"
           src={HeroStar}
-          className="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
+          className="absolute top-20 right-16 hidden w-8 sm:top-28 sm:block lg:right-0 lg:left-[30rem]"
           alt=""
         />
       </Section>

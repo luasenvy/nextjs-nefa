@@ -19,7 +19,7 @@ const getImage = (img: string) => {
 export default function PartnerImage({ img }: { img: string }) {
   return (
     <div>
-      <Image src={getImage(img)} className="sm:w-1/2 lg:w-72 mx-auto" alt="" />
+      <Image src={getImage(img)} className="mx-auto sm:w-1/2 lg:w-72" alt="" />
     </div>
   );
 }

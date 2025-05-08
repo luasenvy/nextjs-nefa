@@ -9,8 +9,6 @@ import Hero from "@/components/Hero";
 import InderstryLeadingSecurity from "@/components/InderstryLeadingSecurity";
 import Partners from "@/components/Partners";
 
-import "@/styles/home.css";
-
 export default function Home() {
   return (
     <div className="w-full">

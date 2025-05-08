@@ -8,7 +8,7 @@ export default function Button({
   return (
     <button
       className={classnames(
-        "text-sm text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300",
+        "rounded-full text-center text-sm transition duration-300 hover:shadow-md hover:shadow-[#0c66ee]/50",
         className
       )}
       {...props}

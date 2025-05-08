@@ -15,9 +15,9 @@ export default function Layout({ children }: React.PropsWithChildren) {
   });
 
   return (
-    <div className="min-h-screen font-sans antialiased relative">
+    <div className="relative min-h-screen font-sans antialiased">
       <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient"></div>
+        <div className="cover-gradient-2 sm:cover-gradient absolute top-0 left-0 h-[125vh] w-full sm:h-[225vh] lg:h-[125vh]"></div>
         <Navbar />
 
         <main className="text-neutral-800">{children}</main>

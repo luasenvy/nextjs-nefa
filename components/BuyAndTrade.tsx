@@ -31,12 +31,12 @@ export default function BuyAndTrade() {
   });
 
   return (
-    <section className="w-full my-24">
+    <section className="my-24 w-full">
       <Section>
-        <BuyTradeImage className="sm:hidden mb-8" />
+        <BuyTradeImage className="mb-8 sm:hidden" />
         <div
           data-aos="fade-right"
-          className="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4"
+          className="col-span-12 mt-4 space-y-6 px-4 lg:col-span-6 xl:mt-20"
         >
           <h2 className="text-4xl font-semibold sm:pr-8 xl:pr-12">
             Buy & trade on the <br className="hidden sm:block" />
@@ -63,7 +63,7 @@ export default function BuyAndTrade() {
               exchangeSelected={cryptoSelected}
               exchanges={cryptocurrencies}
             />
-            <Button className="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">
+            <Button className="bg-blue-gradient w-full px-5 py-4 text-base font-medium text-white">
               Buy Now
             </Button>
           </div>

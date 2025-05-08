@@ -30,7 +30,7 @@ const accordions: Array<AccordionType> = [
 
 export default function FAQ() {
   return (
-    <section className="w-full my-24">
+    <section className="my-24 w-full">
       <Section>
         <div data-aos="fade-right" data-aos-delay="150" className="col-span-12 lg:col-span-6">
           <div className="w-full">
@@ -40,12 +40,12 @@ export default function FAQ() {
         <div
           data-aos="fade-left"
           data-aos-delay="150"
-          className="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8"
+          className="col-span-12 mt-8 px-4 sm:px-6 lg:col-span-6"
         >
-          <span className="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">
+          <span className="text-gradient mb-4 text-base font-semibold uppercase sm:mb-2">
             Support
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">
+          <h2 className="mb-10 text-3xl font-semibold sm:mb-6 sm:text-4xl">
             Frequently asked questions
           </h2>
 

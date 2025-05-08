@@ -33,7 +33,7 @@ export default function Accordion({ accordion }: AccordionProps) {
       {selected && (
         <div className="relative overflow-hidden transition-all duration-700">
           <div className="py-2">
-            <p className="text-sm text-gray-700 tracking-wide leading-relaxed">
+            <p className="text-sm leading-relaxed tracking-wide text-gray-700">
               {accordion.description}
             </p>
           </div>

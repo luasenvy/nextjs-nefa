@@ -57,14 +57,14 @@ export default function CryptoStatistic({
 }: CryptoStatisticProps) {
   return (
     <div
-      className={classnames("w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6", className)}
+      className={classnames("mt-6 w-full space-y-6 overflow-hidden lg:mt-0 lg:w-1/3", className)}
       {...props}
     >
-      <div className="w-full flex items-center justify-between">
+      <div className="flex w-full items-center justify-between">
         <span className="font-medium">{title}</span>
         <a
           href="#"
-          className="px-3 py-1 text-sm font-medium text-blue-500 flex items-center space-x-1 rounded-md hover:bg-blue-50 transition duration-300"
+          className="flex items-center space-x-1 rounded-md px-3 py-1 text-sm font-medium text-blue-500 transition duration-300 hover:bg-blue-50"
         >
           <span>More</span>
           <ChevronRightRounded />
@@ -72,13 +72,13 @@ export default function CryptoStatistic({
       </div>
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden">
+          <div className="inline-block min-w-full overflow-hidden px-2 py-2 align-middle sm:px-6">
             <table className="min-w-full">
               <thead>
                 <tr>
                   <th className="text-left text-sm font-medium text-gray-500">Name</th>
                   <th className="text-left text-sm font-medium text-gray-500">Price</th>
-                  <th className="hidden sm:block text-left text-sm font-medium text-gray-500">
+                  <th className="hidden text-left text-sm font-medium text-gray-500 sm:block">
                     Chart
                   </th>
                 </tr>
@@ -102,10 +102,10 @@ export default function CryptoStatistic({
                         <span>${price}</span>
                       </div>
                     </td>
-                    <td className="hidden sm:block whitespace-nowrap">
+                    <td className="hidden whitespace-nowrap sm:block">
                       <div>
                         <LineChart
-                          className="!w-28 !h-12 -mx-2"
+                          className="-mx-2 !h-12 !w-28"
                           datasets={data}
                           increase={increase}
                         />
