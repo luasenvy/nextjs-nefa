@@ -1,10 +1,11 @@
 import AddRounded from "@mui/icons-material/AddRounded";
 import ChevronRightRounded from "@mui/icons-material/ChevronRightRounded";
 import RemoveRounded from "@mui/icons-material/RemoveRounded";
-import classnames from "classnames";
+
 import Image from "next/image";
 
 import LineChart from "@/components/LineChart";
+import { cn } from "@/lib/utils";
 
 import CryptoIcon2share from "@/public/images/crypto-icon/2share.png";
 import CryptoIconBitcoinAsia from "@/public/images/crypto-icon/bitcoin-asia.png";
@@ -57,7 +58,7 @@ export default function CryptoStatistic({
 }: CryptoStatisticProps) {
   return (
     <div
-      className={classnames("mt-6 w-full space-y-6 overflow-hidden lg:mt-0 lg:w-1/3", className)}
+      className={cn("mt-6 w-full space-y-6 overflow-hidden lg:mt-0 lg:w-1/3", className)}
       {...props}
     >
       <div className="flex w-full items-center justify-between">

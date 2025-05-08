@@ -3,12 +3,13 @@
 import ChevronLeftRounded from "@mui/icons-material/ChevronLeftRounded";
 import CloseRounded from "@mui/icons-material/CloseRounded";
 import SegmentRounded from "@mui/icons-material/SegmentRounded";
-import classnames from "classnames";
+
 import Image from "next/image";
 import { useState } from "react";
 
 import NavLink from "@/components/NavLink";
 import Button from "@/components/base/Button";
+import { cn } from "@/lib/utils";
 
 import Logo from "@/public/images/logo/nefa.svg";
 
@@ -32,7 +33,7 @@ export default function Navbar() {
             </button>
           </div>
           <ul
-            className={classnames(
+            className={cn(
               "animation-fadeindown flex h-auto w-full flex-grow origin-top flex-col space-y-3 pb-4 duration-300 lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:pb-0 xl:space-x-2",
               {
                 flex: open,
@@ -85,7 +86,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className={classnames("space-x-3", { flex: open, hidden: !open, "lg:flex": !open })}>
+        <div className={cn("space-x-3", { flex: open, hidden: !open, "lg:flex": !open })}>
           <Button className="text-gradient mt-2 border border-[#0c66ee] bg-inherit px-8 py-3 xl:px-10">
             Login
           </Button>

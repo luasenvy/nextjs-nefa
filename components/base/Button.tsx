@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "@/lib/utils";
 
 export default function Button({
   className,
@@ -7,7 +7,7 @@ export default function Button({
 }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      className={classnames(
+      className={cn(
         "rounded-full text-center text-sm transition duration-300 hover:shadow-md hover:shadow-[#0c66ee]/50",
         className
       )}
