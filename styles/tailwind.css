@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @plugin "@tailwindcss/aspect-ratio";
 @plugin "@tailwindcss/forms";
