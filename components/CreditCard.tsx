@@ -16,7 +16,7 @@ export default function CreditCard() {
           </div>
         </div>
         <div className="col-span-12 mt-20 space-y-6 px-4 sm:px-6 lg:col-span-5">
-          <h2 className="text-4xl font-semibold">
+          <h2 className="font-semibold text-4xl">
             Introducing the <span className="text-header-gradient">NEFA</span> Credit Card
           </h2>
           <p className="paragraph">
@@ -27,7 +27,7 @@ export default function CreditCard() {
             <ListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
             <ListItem title="No annual fee" />
           </ul>
-          <Button className="text-gradient w-full border border-[#0c66ee] bg-inherit px-10 py-4 text-base sm:max-w-[240px]">
+          <Button className="w-full border border-[#0c66ee] bg-inherit px-10 py-4 text-base text-gradient sm:max-w-[240px]">
             Join the waitlist
           </Button>
         </div>

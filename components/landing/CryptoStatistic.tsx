@@ -8,8 +8,8 @@ import LineChart from "@/components/LineChart";
 import { cn } from "@/lib/utils";
 
 import CryptoIcon2share from "@/public/images/crypto-icon/2share.png";
-import CryptoIconBitcoinAsia from "@/public/images/crypto-icon/bitcoin-asia.png";
 import CryptoIconBitcoin from "@/public/images/crypto-icon/bitcoin.png";
+import CryptoIconBitcoinAsia from "@/public/images/crypto-icon/bitcoin-asia.png";
 import CryptoIconDogecoin from "@/public/images/crypto-icon/dogecoin.png";
 import CryptoIconEthereum from "@/public/images/crypto-icon/ethereum.png";
 import CryptoIconFrog from "@/public/images/crypto-icon/frog.png";
@@ -65,35 +65,35 @@ export default function CryptoStatistic({
         <span className="font-medium">{title}</span>
         <a
           href="#"
-          className="flex items-center space-x-1 rounded-md px-3 py-1 text-sm font-medium text-blue-500 transition duration-300 hover:bg-blue-50"
+          className="flex items-center space-x-1 rounded-md px-3 py-1 font-medium text-blue-500 text-sm transition duration-300 hover:bg-blue-50"
         >
           <span>More</span>
           <ChevronRightRounded />
         </a>
       </div>
       <div className="flex flex-col">
-        <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div className="-my-2 sm:-mx-6 lg:-mx-8 overflow-x-auto">
           <div className="inline-block min-w-full overflow-hidden px-2 py-2 align-middle sm:px-6">
             <table className="min-w-full">
               <thead>
                 <tr>
-                  <th className="text-left text-sm font-medium text-gray-500">Name</th>
-                  <th className="text-left text-sm font-medium text-gray-500">Price</th>
-                  <th className="hidden text-left text-sm font-medium text-gray-500 sm:block">
+                  <th className="text-left font-medium text-gray-500 text-sm">Name</th>
+                  <th className="text-left font-medium text-gray-500 text-sm">Price</th>
+                  <th className="hidden text-left font-medium text-gray-500 text-sm sm:block">
                     Chart
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {datasets.map(({ id, logo, name, increase, price, data }) => (
-                  <tr key={id} className="border-b border-gray-200">
-                    <td className="py-4 whitespace-nowrap">
+                  <tr key={id} className="border-gray-200 border-b">
+                    <td className="whitespace-nowrap py-4">
                       <div className="flex items-center space-x-2">
                         <Image src={getImage(logo)} alt="" />
                         <span>{name}</span>
                       </div>
                     </td>
-                    <td className="py-4 whitespace-nowrap">
+                    <td className="whitespace-nowrap py-4">
                       <div className="flex items-center">
                         {increase ? (
                           <AddRounded className="text-emerald-500" />

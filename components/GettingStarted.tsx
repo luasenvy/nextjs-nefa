@@ -27,9 +27,9 @@ const steps: Array<StepType> = [
 
 export default function GettingStarted() {
   return (
-    <section className="bg-trading-tools relative my-24 max-w-full overflow-hidden shadow-sm sm:mx-4 sm:rounded-2xl xl:mx-10">
+    <section className="relative my-24 max-w-full overflow-hidden bg-trading-tools shadow-sm sm:mx-4 sm:rounded-2xl xl:mx-10">
       <div className="flex w-full flex-col items-center py-16">
-        <h2 data-aos="flip-down" className="text-center text-3xl font-semibold sm:text-4xl">
+        <h2 data-aos="flip-down" className="text-center font-semibold text-3xl sm:text-4xl">
           Get started in just a few minutes
         </h2>
         <div

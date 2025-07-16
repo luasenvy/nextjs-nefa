@@ -27,8 +27,8 @@ export default function Step({ step }: StepProps) {
   return (
     <div className="max-w-[280px] space-y-6 text-center sm:space-y-3 xl:max-w-[363px]">
       <Image src={getImage(step.img)} className="mx-auto max-w-[245px]" alt="" />
-      <h3 className="text-xl font-semibold text-neutral-800">{step.title}</h3>
-      <p className="text-sm leading-relaxed text-gray-700">{step.description}</p>
+      <h3 className="font-semibold text-neutral-800 text-xl">{step.title}</h3>
+      <p className="text-gray-700 text-sm leading-relaxed">{step.description}</p>
     </div>
   );
 }

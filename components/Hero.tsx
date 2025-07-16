@@ -19,14 +19,14 @@ export default function Hero() {
           <span
             data-aos="fade-right"
             data-aos-once="true"
-            className="text-gradient text-base font-semibold uppercase"
+            className="font-semibold text-base text-gradient uppercase"
           >
             Sign Up Today
           </span>
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            className="text-[2.5rem] leading-tight font-bold capitalize sm:pr-8 sm:text-5xl xl:pr-10 xl:text-6xl"
+            className="font-bold text-[2.5rem] capitalize leading-tight sm:pr-8 sm:text-5xl xl:pr-10 xl:text-6xl"
           >
             The World's <span className="text-header-gradient">Fastest Growing</span> Crypto Web App
           </h1>
@@ -43,12 +43,12 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
-            className="mt-2 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4"
+            className="mt-2 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
           >
             <Button className="max-w-full border border-[#0c66ee] bg-gradient-to-r from-[#468ef9] to-[#0c66ee] px-8 py-4 text-white">
               Get Started
             </Button>
-            <Button className="text-gradient flex max-w-full items-center justify-center border border-[#0c66ee] bg-inherit px-6 py-4">
+            <Button className="flex max-w-full items-center justify-center border border-[#0c66ee] bg-inherit px-6 py-4 text-gradient">
               <span>Download App</span>
               <ChevronLeftRounded
                 className="mt-1 text-[#0c66ee]"

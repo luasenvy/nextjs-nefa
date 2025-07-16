@@ -21,11 +21,11 @@ const cryptocurrencies: Array<Currency> = [
 ];
 
 export default function BuyAndTrade() {
-  const [currencySelected, setCurrencySelected] = useState<Currency>({
+  const [currencySelected] = useState<Currency>({
     img: "country-icon/eng.png",
     name: "USD",
   });
-  const [cryptoSelected, setCryptoSelected] = useState<Currency>({
+  const [cryptoSelected] = useState<Currency>({
     img: "crypto-icon/bitcoin.png",
     name: "BTC",
   });
@@ -38,7 +38,7 @@ export default function BuyAndTrade() {
           data-aos="fade-right"
           className="col-span-12 mt-4 space-y-6 px-4 lg:col-span-6 xl:mt-20"
         >
-          <h2 className="text-4xl font-semibold sm:pr-8 xl:pr-12">
+          <h2 className="font-semibold text-4xl sm:pr-8 xl:pr-12">
             Buy & trade on the <br className="hidden sm:block" />
             original crypto exchange.
           </h2>
@@ -63,7 +63,7 @@ export default function BuyAndTrade() {
               exchangeSelected={cryptoSelected}
               exchanges={cryptocurrencies}
             />
-            <Button className="bg-blue-gradient w-full px-5 py-4 text-base font-medium text-white">
+            <Button className="w-full bg-blue-gradient px-5 py-4 font-medium text-base text-white">
               Buy Now
             </Button>
           </div>

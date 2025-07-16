@@ -42,10 +42,10 @@ export default function FAQ() {
           data-aos-delay="150"
           className="col-span-12 mt-8 px-4 sm:px-6 lg:col-span-6"
         >
-          <span className="text-gradient mb-4 text-base font-semibold uppercase sm:mb-2">
+          <span className="mb-4 font-semibold text-base text-gradient uppercase sm:mb-2">
             Support
           </span>
-          <h2 className="mb-10 text-3xl font-semibold sm:mb-6 sm:text-4xl">
+          <h2 className="mb-10 font-semibold text-3xl sm:mb-6 sm:text-4xl">
             Frequently asked questions
           </h2>
 

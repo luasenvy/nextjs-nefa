@@ -40,13 +40,13 @@ export default function Exchange({
   return (
     <div className="flex items-center space-x-4">
       <div className="relative flex w-full items-center rounded-xl border border-[#0c66ee] px-5 py-3 lg:max-w-[336px]">
-        <span className="border-r border-[#0c66ee] py-3 pr-5 text-sm font-medium text-[#0c66ee]">
+        <span className="border-[#0c66ee] border-r py-3 pr-5 font-medium text-[#0c66ee] text-sm">
           {" "}
           {title}{" "}
         </span>
         <input
           type={type}
-          className="w-full border-none text-right text-lg font-medium ring-0 focus:ring-0 focus:outline-none"
+          className="w-full border-none text-right font-medium text-lg ring-0 focus:outline-none focus:ring-0"
           name={name}
           defaultValue={defaultValue}
         />
@@ -54,7 +54,7 @@ export default function Exchange({
       <div className="relative w-full max-w-[106px] sm:max-w-[159px]">
         <button
           type="button"
-          className="relative flex w-full items-center justify-center space-x-1 rounded-xl border border-[#0c66ee] py-[1.35rem] text-sm font-medium sm:px-6"
+          className="relative flex w-full items-center justify-center space-x-1 rounded-xl border border-[#0c66ee] py-[1.35rem] font-medium text-sm sm:px-6"
           onClick={() => setOpenDropdown((prev) => !prev)}
           onBlur={() => setOpenDropdown((prev) => !prev)}
         >
@@ -69,14 +69,14 @@ export default function Exchange({
 
         {openDropdown && (
           <ul
-            className="ring-opacity-5 animation-fadeindown absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md border border-[#0c66ee] bg-white py-1 text-base shadow-lg ring-1 ring-black focus:outline-none sm:text-sm"
+            className="animation-fadeindown absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md border border-[#0c66ee] bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
             tabIndex={-1}
           >
             {exchanges.map((exchange, i) => (
               <li
                 id={`listbox-option-${i}`}
                 key={exchange.name}
-                className="relative cursor-default px-3 py-2 text-gray-900 select-none sm:px-5"
+                className="relative cursor-default select-none px-3 py-2 text-gray-900 sm:px-5"
                 role="option"
               >
                 <div className="flex items-center">

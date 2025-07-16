@@ -11,7 +11,7 @@ export default function BuyAndTradeImage({
   return (
     <div className={cn("col-span-12 lg:col-span-6", className)} {...props}>
       <div className="w-full">
-        <Image src={BuyAndtrade} className="mt-4 sm:-mt-4" alt="" />
+        <Image src={BuyAndtrade} className="sm:-mt-4 mt-4" alt="" />
       </div>
     </div>
   );

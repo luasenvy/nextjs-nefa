@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} text-base break-keep antialiased`}>{children}</body>
+      <body className={`${poppins.className} break-keep text-base antialiased`}>{children}</body>
     </html>
   );
 }

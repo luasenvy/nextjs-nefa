@@ -17,10 +17,10 @@ export default function InderstryLeadingSecurity() {
           data-aos="fade-left"
           className="col-span-12 mt-8 space-y-8 sm:space-y-6 lg:col-span-5 xl:px-8"
         >
-          <h2 className="text-4xl font-semibold">Industry-leading security from day one</h2>
+          <h2 className="font-semibold text-4xl">Industry-leading security from day one</h2>
           <ul className="space-y-8 sm:space-y-4">
             <ListItem title="Safety, security and compliance">
-              <p className="text-sm leading-relaxed text-gray-700">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 NEFA is a licensed New York trust company that undergoes regular bank exams and is
                 subject to the cybersecurity audits conducted by the New York Department of
                 Financial Services.
@@ -28,12 +28,12 @@ export default function InderstryLeadingSecurity() {
               </p>
             </ListItem>
             <ListItem title="Hardware security keys">
-              <p className="text-sm leading-relaxed text-gray-700">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 With NEFA you can secure your account with a hardware security key via WebAuthn.
               </p>
             </ListItem>
             <ListItem title="SOC Certifications">
-              <p className="text-sm leading-relaxed text-gray-700">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 NEFA is <span className="underline">SOC 1 Type 2</span> and
                 <span className="underline">SOC 2 Type 2</span> compliant. We are the world’s first
                 cryptocurrency exchange and custodian to complete these exams.

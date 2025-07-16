@@ -6,9 +6,8 @@ import SegmentRounded from "@mui/icons-material/SegmentRounded";
 
 import Image from "next/image";
 import { useState } from "react";
-
-import NavLink from "@/components/NavLink";
 import Button from "@/components/base/Button";
+import NavLink from "@/components/NavLink";
 import { cn } from "@/lib/utils";
 
 import Logo from "@/public/images/logo/nefa.svg";
@@ -26,7 +25,7 @@ export default function Navbar() {
               <Image src={Logo} className="w-24 xl:w-28" alt="Nefa Logo" />
             </div>
             <button
-              className="focus:shadow-outline rounded-lg focus:outline-none lg:hidden"
+              className="rounded-lg focus:shadow-outline focus:outline-none lg:hidden"
               onClick={() => setOpen((prev) => !prev)}
             >
               {open ? <CloseRounded /> : <SegmentRounded />}
@@ -39,7 +38,7 @@ export default function Navbar() {
                 flex: open,
                 hidden: !open,
                 "lg:flex": !open,
-              }
+              },
             )}
           >
             <NavLink name="Cryptocurrency" url="#" />
@@ -49,7 +48,7 @@ export default function Navbar() {
             <NavLink name="Portfolio" url="#" />
             <li className="group relative">
               <button
-                className="focus:shadow-outline flex items-center rounded-lg bg-transparent py-2 text-sm text-[#666666] hover:text-gray-900 focus:outline-none md:px-4"
+                className="flex items-center rounded-lg bg-transparent py-2 text-[#666666] text-sm hover:text-gray-900 focus:shadow-outline focus:outline-none md:px-4"
                 onClick={() => setDropdownNavbar((prev) => !prev)}
                 onBlur={() => setDropdownNavbar(false)}
               >
@@ -62,22 +61,22 @@ export default function Navbar() {
               {dropdownNavbar && (
                 <ul className="animation-fadeindown flex max-w-42 flex-col rounded-md py-1 pl-2 lg:absolute lg:bg-white lg:pl-0 lg:shadow-md">
                   <li>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100">
                       Exchange
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100">
                       Wallet
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100">
                       Explorer
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <a href="#" className="block px-4 py-2 text-gray-700 text-sm hover:bg-gray-100">
                       Charts
                     </a>
                   </li>
@@ -87,7 +86,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className={cn("space-x-3", { flex: open, hidden: !open, "lg:flex": !open })}>
-          <Button className="text-gradient mt-2 border border-[#0c66ee] bg-inherit px-8 py-3 xl:px-10">
+          <Button className="mt-2 border border-[#0c66ee] bg-inherit px-8 py-3 text-gradient xl:px-10">
             Login
           </Button>
           <Button className="mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] px-8 py-3 text-white xl:px-10">

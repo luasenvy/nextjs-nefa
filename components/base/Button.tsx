@@ -8,8 +8,8 @@ export default function Button({
   return (
     <button
       className={cn(
-        "rounded-full text-center text-sm transition duration-300 hover:shadow-md hover:shadow-[#0c66ee]/50",
-        className
+        "rounded-full text-center text-sm transition duration-300 hover:shadow-[#0c66ee]/50 hover:shadow-md",
+        className,
       )}
       {...props}
     >

@@ -107,7 +107,7 @@ const recents: Array<Dataset> = [
 
 export default function CryptoStatistics() {
   return (
-    <section className="mx-2 max-w-screen-xl transform rounded-[2.25rem] bg-white px-4 py-6 pb-20 shadow-lg sm:mx-auto sm:rounded-xl sm:px-6 sm:py-8 sm:shadow-md lg:-translate-y-12 lg:px-0">
+    <section className="lg:-translate-y-12 mx-2 max-w-screen-xl transform rounded-[2.25rem] bg-white px-4 py-6 pb-20 shadow-lg sm:mx-auto sm:rounded-xl sm:px-6 sm:py-8 sm:shadow-md lg:px-0">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row">
         <CryptoStatistic
           data-aos="fade-up"
